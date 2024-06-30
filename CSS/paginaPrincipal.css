@@ -1,0 +1,99 @@
+body {
+    background-color: #e1e2df;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.8em;
+    color: #fff;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 50px;
+    font-size: 1em;
+}
+
+.nav-links li a {
+    color:#e1e2df;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.nav-links li a:hover {
+    color: #ff6600;
+}
+
+.dropdown {
+    position: relative;
+    display: inline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #030303;
+    min-width: 170px;
+    z-index: 1;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.dropdown-content li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.galeria img {
+    margin-top: 1px;
+    width: 45%; 
+    border-radius: 50%; 
+    max-width: 100%; 
+}
+
+.galeria p {
+    font-size: 1.1em;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+.mision {
+    padding: 2px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 23px;
+    font-family:'Courier New', Courier, monospace;
+}

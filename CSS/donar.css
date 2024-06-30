@@ -1,0 +1,109 @@
+/* Estilos para el formulario y la tabla */
+
+body {
+        background-color: antiquewhite;
+        background-size: cover; /* Cubrir todo el fondo */
+        background-position: center; /* Centrar la imagen */
+        background-repeat: no-repeat; /* Evitar que la imagen se repita */
+        /* Otros estilos que desees aplicar al cuerpo */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+    
+    
+form {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1px;
+    padding: 10px; 
+}
+
+.table1 {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    
+}
+.table2 {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 15px; /* Ajusta el margen superior */
+    margin-bottom: 15px; /* Ajusta el margen inferior */
+}
+
+
+/* Alineación de los botones de radio y etiquetas */
+input[type="radio"] {
+    width: auto; /* Cambiamos el ancho a automático para que se ajuste al contenido */
+    margin-right: 10px; /* Espacio entre los botones de radio y las etiquetas */
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block; /* Para que las etiquetas se muestren en línea */
+    vertical-align: middle; /* Para alinear verticalmente las etiquetas con los botones de radio */
+    margin-right: 20px; /* Espacio entre las etiquetas */
+}
+
+
+input[type="submit"] {
+    background-color: #e97a13;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px; 
+}
+
+input[type="submit"]:hover {
+    background-color: #d4c099;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color:   rgb(4, 255, 0);
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}

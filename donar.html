@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        CRUD A Formulario Con tabla de donaciones 
+    </title>
+    <link rel="stylesheet" href="CSS/donar.css">
+</head>
+
+<body>
+    <h1><center>🦚🦆🦅Complete el siguiente formulario🐧🐦🦃</center></h1>
+     <!-- Crearemos la tabla que tendra  una sola fila-->
+    <table class="table1">                   <!-- la tabla tendra una sola fila-->
+        <tr>                    <!-- y dos (columnas) celdas-->
+            <td>                <!-- en la primera celda cargaremos un formulario completo-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off"> 
+                    <!-- aqui controlamos no viajen a un destino-->
+                     <!--El método preventDefault () cancela el evento si es cancelable, 
+                        lo que significa que la acción predeterminada que pertenece al evento no ocurrirá. -->
+                    <!-- si no que se mantenga en la pantalla del nav -->
+                    <div>                                                                 
+                        <label><strong>Nombre completo</strong></label><label class="validation-error hide" id="nombreCompletoValidationError">Este campo es requerido.</label>
+                        <input type="text" name="nombreCompleto" id="nombreCompleto">
+                    </div>
+                    <div>
+                        <label><strong>Forma de pago</strong></label>
+                        <input type="radio" id="debito" name="formaDePago" value="Débito">
+                        <label for="debito">Débito</label>
+                        <input type="radio" id="credito" name="formaDePago" value="Crédito">
+                        <label for="credito">Crédito</label>
+                        <input type="radio" id="transferencia" name="formaDePago" value="Transferencia">
+                        <label for="transferencia">Transferencia</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label><strong>Monto</strong></label>
+                        <input type="text" name="monto" id="monto">
+                    </div>
+                    <div>
+                        <label><strong>Comuna</strong></label>
+                        <input type="text" name="comuna" id="comuna">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Donar">
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <h1><center><strong>🦉🦉🦉DONACIONES🦉🦉🦉</strong></center></h1>
+    <table class="table2">
+        <tr>
+            <td>                        <!-- en esta segunda celda  insertamos otra tabla -->
+                <table class="list" id="empleadoList">
+                    <thead>
+                        <tr>             <!-- a modo de matriz mostraremos los datos de los empleados.-->
+                            <th>Nombre Completo</th>    <!-- definimos los encabezados de columnas-->
+                            <th>Forma de Pago</th>
+                            <th>Monto</th>
+                            <th>Comuna</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>     <!-- dejamos el tbody vacio para generar los datos  en forma  dinamica-->
+                                        <!-- a traves de las funciones de JavaScript -->
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        
+    </table>
+    <div id="mensaje-exito"></div>
+    <script src="donar.js"></script>
+    
+</body>
+
+</html>
